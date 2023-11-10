@@ -1,0 +1,20 @@
+{
+  "HOME": {
+    "TITLE": "Bonjour Angular avec ngx-translate !",
+    "SELECT": "Changer la langue"
+  },
+  "Add Form": "Add Form",
+  "language": "Language",
+  "name": "Name",
+  "english": "English",
+  "price": "Price",
+  "brand": "Brand",
+  "category": "category",
+  "brand-is-required": "Brand is required",
+  "price-is-required": "Price is required",
+  "name-is-required": "Name is required",
+  "category-is-required": "Category is required",
+  "german": "German",
+  "cancel": "Cancel",
+  "add":"Add"
+}

@@ -1,0 +1,111 @@
+body{
+  background-color: black;
+  color: white;
+}
+.container{
+    width: 100%;
+    height: 200px;
+}
+.imagecontainer{
+  
+  background-color:black;
+  color: white;
+  
+
+}
+.video{
+   /* max-width: 1300px;
+   width: 100%;
+   top: 30px;
+   height: 197px;
+   right: 0;
+   left: 0; */
+ 
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+}
+#overlay{
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  /* font-size: 40px; */
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+.con{
+  display: flex;
+  flex-direction: row;
+}
+.con .btn1{
+  height: 22px;
+  font-size: 10px;
+  margin-left: 85px;
+  background-color: black;
+  color: white;
+  border-color: rgba(240, 248, 255, 0.498);
+}
+.con .btn2{
+  height: 22px;
+  font-size: 10px;
+  margin-left: 10px;
+  background-color: black;
+  color: white;
+  border-color: rgba(240, 248, 255, 0.498);
+}
+.con .btn3{
+  height: 22px;
+  font-size: 10px;
+  margin-left: 4px;
+  background-color: black;
+  color: white;
+  border-color: rgba(240, 248, 255, 0.498);
+}
+#overlay pre{
+  line-height: 0.9;
+  font-size: 22px;
+  color: grey;
+  
+  font-family: 'Times New Roman', Times, serif;
+}
+#size{
+  position: absolute;
+  top: 40%;
+  left: 30%;
+
+  color: black;
+  /* transform: translate(-50%,-50%); */
+  /* -ms-transform: translate(-50%,-50%); */
+}
+#overlay{
+color: white;
+ 
+ 
+}
+.heading{
+margin-bottom: 0;
+}
+
+.images{
+    max-width:192px;
+    width: 100%;
+   margin: 2px;
+  flex-direction: row;
+  transition: opacity 0.3s, background-color 0.3s; /* Add transitions for opacity and background-color */
+  background-color: transparent; 
+
+}
+
+
+.images:hover {
+  opacity: 0.8;
+  background-color: hsl(122, 100%, 50%); /* Change the background color when hovered over */
+}
+
+@media(max-width: 950px) {
+  .images {
+      max-width: 181px;
+   width: 100%;
+  }
+}

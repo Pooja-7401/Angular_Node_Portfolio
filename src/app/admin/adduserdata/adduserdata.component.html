@@ -1,0 +1,74 @@
+<div class="card mb-1">
+
+    <div class="card-header">
+        UserAdd
+    </div>
+    <div class="card-body">
+        <h5>{{ 'use-here-get-api' | translate }}</h5>
+        <div class="conatiner" style="max-width: 1400px; margin-left: 34px;">
+
+            <div ngbDropdown class="d-inline-block d-flex">
+                <button class="btn" id="languageDropdown" ngbDropdownToggle>
+                    {{ 'language' | translate }}
+                </button>
+                <div ngbDropdownMenu aria-labelledby="languageDropdown">
+                    <button class="dropdown-item" (click)="changeLanguage('en')">{{ 'english' | translate }}</button>
+                    <button class="dropdown-item" (click)="changeLanguage('de')">{{ 'german' | translate }}</button>
+
+                </div>
+            </div>
+            <!-- <h1>{{ 'HELLO' | translate }}</h1>
+            <p>{{ 'WELCOME_MESSAGE' | translate }}</p> -->
+            <!-- <div>{{ 'language' | translate }}</div> -->
+            <form [formGroup]="registerForm" class="d-flex row">
+         
+                <div class="mb-1 col-md-6">
+                    <label for="exampleInputEmail1" class="form-label">{{ 'name' | translate }}</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    formControlName="name" [ngClass]="{ 'is-invalid': submitted && f['name'].errors }">
+
+                    <div *ngIf="submitted && f['name'].errors" class="invalid-feedback">
+                        <div *ngIf="f['name'].errors?.['required']">{{ 'name-is-required' | translate }}</div>
+                    </div>
+
+
+                </div>
+                <div class="mb-1 col-md-6">
+                    <label for="exampleInputEmail1" class="form-label">{{'price' | translate }}</label>
+                    <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        formControlName="price" [ngClass]="{ 'is-invalid': submitted && f['price'].errors }">
+                        <div *ngIf="submitted && f['price'].errors" class="invalid-feedback">
+                            <div *ngIf="f['price'].errors?.['required']">{{ 'price-is-required' | translate }}</div>
+                        </div>
+    
+                </div>
+                <div class="mb-1 col-md-6">
+                    <label for="exampleInputEmail1" class="form-label">{{'brand' | translate }}</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        formControlName="brand" [ngClass]="{ 'is-invalid': submitted && f['brand'].errors }">
+                        <div *ngIf="submitted && f['brand'].errors" class="invalid-feedback">
+                            <div *ngIf="f['brand'].errors?.['required']">{{ 'brand-is-required' | translate }}</div>
+                        </div>
+    
+                </div>
+                <div class="mb-1 col-md-6">
+                    <label for="exampleInputEmail1" class="form-label">{{ 'category' | translate }}</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        formControlName="category" [ngClass]="{ 'is-invalid': submitted && f['category'].errors }">
+                        <div *ngIf="submitted && f['category'].errors" class="invalid-feedback">
+                            <div *ngIf="f['category'].errors?.['required']">{{ 'category-is-required' | translate }}</div>
+                        </div>
+    
+                </div>
+
+
+
+                <button type="button" class="btn btn-primary" (click)="modeEditForm ? editProduct() : postData()" style="width: 200px;
+                height: 38px;
+                margin-top: 9px;">{{
+                    modeEditForm ? 'Edit' : 'Add' }}</button>
+
+                <button type="button" class="btn btn-danger m-2" (click)="onReset()" style="width: 200px;">{{ 'cancel' | translate }}</button>
+            </form>
+        </div>
+    </div>

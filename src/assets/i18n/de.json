@@ -1,0 +1,21 @@
+{
+  "HOME": {
+    "TITLE": "Hello Angular with ngx-translate!",
+    "SELECT": "Change language"
+  },
+  "use-here-get-api": "Verwenden Sie hier Get Api",
+  "language": "Sprache",
+  "price": "Preis",
+  "english": "Englisch",
+  "name": "Name",
+  "brand": "Marke",
+  "Add Form": "Formular hinzufügen",
+  "brand-is-required": "Marke ist erforderlich",
+  "category-is-required": "Kategorie ist erforderlich",
+  "name-is-required": "Name ist erforderlich",
+  "price-is-required": "Preis ist erforderlich",
+  "category": "Kategorie",
+  "cancel": "Stornieren",
+  "german": "Deutsch",
+  "add": "Hinzufügen"
+}
